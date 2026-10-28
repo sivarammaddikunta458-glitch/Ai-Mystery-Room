@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mystery Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔎 AI Mystery Room</h1>
+        <p>Every clue tells a story. Every suspect hides a secret.</p>
+    </header>
+
+    
+<main>
+    <!-- 1. Hero section -->
+    <section class="hero">
+        <h2>Become a Detective</h2>
+        <p>Solve mysteries, discover clues, and find the culprit.</p>
+        <button id="startButton">Start Investigation</button>
+    </section>
+
+    <!-- 2. Difficulty section -->
+    <section class="difficulty">
+        <h2>Choose Your Difficulty</h2>
+        <button class="level" data-level="Easy">Easy</button>
+        <button class="level" data-level="Medium">Medium</button>
+        <button class="level" data-level="Hard">Hard</button>
+        <p id="message">Select a difficulty to begin.</p>
+    </section>
+
+    <!-- 3. Evidence Room -->
+    <section class="clues">
+        <h2>🔍 Evidence Room</h2>
+        <p>Investigate the museum to discover clues.</p>
+
+        <button class="clue-btn" data-clue="0">Inspect the Glass Case</button>
+        <button class="clue-btn" data-clue="1">Check the Window</button>
+        <button class="clue-btn" data-clue="2">Examine the Footprints</button>
+
+        <div id="clue-result">Your clues will appear here.</div>
+    </section>
+
+    <!-- 4. Suspects section -->
+    <section class="suspects">
+        <h2>🕵️ Investigate the Suspects</h2>
+        <p>Click a suspect to inspect their statement.</p>
+
+        <button class="suspect-btn" data-suspect="Alex">Alex — Museum Guard</button>
+        <button class="suspect-btn" data-suspect="Maya">Maya — Museum Researcher</button>
+        <button class="suspect-btn" data-suspect="Ryan">Ryan — Museum Visitor</button>
+
+        <div id="suspect-result">Choose a suspect to begin questioning.</div>
+    </section>
+    <!---5.Solve and mystery-->
+<section class="solve">
+    <h2>🕵️ Solve the Mystery</h2>
+    <p>Who stole the royal museum's diamond?</p>
+
+    <button class="answer-btn" data-answer="Alex">Alex</button>
+    <button class="answer-btn" data-answer="Maya">Maya</button>
+    <button class="answer-btn" data-answer="Ryan">Ryan</button>
+
+    <p id="answer-result">Choose who you think stole the diamond.</p>
+</section>
+
+
+
+</main>
+
+    <footer>
+        <p>AI Mystery Room | Think Carefully. Solve the Truth.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
